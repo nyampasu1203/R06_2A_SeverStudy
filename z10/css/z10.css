@@ -1,0 +1,42 @@
+body{
+    background-color: burlywood;
+    background-image: url(../img/back.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#title{
+    letter-spacing: 10px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+}
+
+p{
+    line-height: 180%;
+}
+
+.kome{
+    color: crimson;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: chartreuse;
+}
+
+a:visited {
+    color: crimson;
+}
+
+a:focus {
+    color: blueviolet;
+}
+
+a:fover {
+    color: deeppink;
+}
