@@ -6,7 +6,8 @@ img{
 }
 
 header {
-    
+    background-color: black;
+    text-align: center;
 }
 
 header h1 {
@@ -16,6 +17,7 @@ header h1 {
 
 header h2 {
     margin-bottom: 20px;
+    color: white;
 }
 
 ul{
@@ -29,7 +31,9 @@ li{
     background-color:chocolate;
 }
 
-
+a{
+    text-decoration: none;
+}
 
 a:link{color:lavender;}
 a:visited{color:lavender;}
@@ -71,9 +75,28 @@ small{
 
 /* タブレット向け（768px～1023px） */
 @media screen and (min-width:768px) {
+    h3,h4{
+        text-align: left;
+    }
+
+    p{
+        font-size: 20px;
+        margin: 10px;
+        line-height: 25px;
+    }
 }
 
 /* PC向け（1024px～） */
 @media screen and (min-width:1024px) {
+    main {
+        width: 60%;
+        float: left
+    }
+    #sub {
+        width: 40%;
+        float: right;
+    }
+    footer{
+        clear: left;
+    }
 }
-
