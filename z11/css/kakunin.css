@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+@media screen and (min-width:768px) {
+    body{
+        background-color: aquamarine;
+    }
+} 
+
+@media screen and (min-width:1024px) {
+    body{
+        background-color: brown;
+    }
+} 
