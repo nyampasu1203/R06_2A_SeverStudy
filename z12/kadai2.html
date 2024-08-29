@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        const omikuji_code = {
+            DAIKYO : 0,
+            KYO : 1,
+            KICHI : 2,
+            DAIKICHI : 3,
+        }
+
+        const rand = Math.floor(Math.random() * 4);
+        let result = "";
+
+        switch(rand){
+            case omikuji_code.DAIKYO :omikuji_code
+                result = "大凶";
+                break;
+            case omikuji_code.KYO :omikuji_code
+                result = "凶";
+                break;
+            case omikuji_code.KICHI :omikuji_code
+                result = "吉";
+                break;
+            case omikuji_code.DAIKICHI :omikuji_code
+                result = "大吉";
+                break;
+        }
+
+        window.alert("今日の運勢は" + result + "です");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

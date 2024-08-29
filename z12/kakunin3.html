@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = 100;
+        let b = "aaa";
+        let c = true;
+
+        let d = [];
+        let e = Array();
+
+        let f = ["1","2","3"];
+
+        let g = f[1];
+
+        let gakusei = {"name":"tarou", "age":20, "size":25.0 }
+
+        let h = gakusei["name"];
+        let i = gakusei.name;
+
+        if(1 === "1"){
+            console.log("①は同じです。");
+        } else{
+            console.log("①は違います。");
+        }
+
+        function aaa(){
+            return "関数実行したよ";
+        }
+
+        let j = aaa();
+        console.log(j);
+
+        let obj = {
+            name : "田中　太郎",
+            age : 30,
+            hobby : ["読書","ウォーキング"],
+
+            getname: function() {
+                return this.name;
+            }
+        }
+
+        console.log("名前を聞くその①:" + Obj.name);
+        console.log("名前を聞くその②:" + Obj.getname());
+        console.log("趣味は" + Obj.hobby[0] + "と" + obj.hobby[1] + "です")
+
+        let obj2 = new Object();
+        obj2.name = "丸山";
+
+        let today = new Date();
+        print(today);
+
+        print(today.gethours() + "時" + today.getMinutes() + "分です");
+
+        let tommorow = new Date(2024, 7, 12);
+        print(tommorow.getMonth() + "月" + tommorow.getDate() + "日です");
+
+        window.alert("アラートだしますよ");
+        window.alert(location.hostname);
+
+        function print(text){
+            console.log(text);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

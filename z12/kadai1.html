@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const weeks = ["日","月","火","水","木","金","土"];
+    let today = new Date(2024,6,12); //月が0始まり 0=1月, 11=12月
+    let day = today.getDay();
+
+    window.alert(today);
+    window.alert("今日は" + weeks[day] + "曜日です。");
+</script>
+<body>
+    
+</body>
+</html>
