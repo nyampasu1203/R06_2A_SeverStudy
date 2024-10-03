@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    window.onload = function() {
+    // 要素を取得
+    var input = document.getElementById("input_text");
+    console.log("変更前の(属性) : " + input.getAttribute("value"));
+    console.log("変更前のプロパティ:" + input.value);
+    input.value = "変更したよ";
+    // 属性取得
+    console.log("変更後の属性:" + input.getAttribute("value"));
+    // プロパティの取得
+    console.log("変更後のプロパティ:" + input.value);
+    }
+</script>
+<body>
+    <input type="text" id="input_text" value="サンプル">
+</body>
+</html>

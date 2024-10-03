@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    window.onload = function(){
+        // タグ名で要素を取得
+        let elems = document.getElementById("li");
+
+        // 取得した配列の一つ一つの要素を取り出す
+        for(let i=0; i<elems.length; i++){
+            // 要素を順番に取り出す
+            let elem = elems[i];
+            //要素のテキスト部分を取得
+            window.alert(elem.textContent);
+            console.log(elem.textContent);
+        }
+    }
+</script>
+<body>
+    <ul>
+        <li>Munu1</li>
+        <li>Munu2</li>
+        <li>Munu3</li>
+    </ul>
+</body>
+</html>
