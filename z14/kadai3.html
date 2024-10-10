@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*function MouseOver(){
+            var img = document.getElementById("img");
+            img.src = "img/Sakura-miko.png"
+        }
+        function MouseOut(){
+            let img = document.getElementById("img");
+            img.src = "img/Usada-Pekora.png"
+        }*/
+
+        window.onload = function(){
+            let img = document.getElementById("img");
+
+            img.onmouseover = function(){
+            img.src = "img/Usada-pekora.png"
+        }
+
+        img.onmouseover = function(){
+            img.src = "img/Sakura-miko.png"
+        }
+    }
+    </script>
+</head>
+<body>
+    <img id="img" src="img/Usada-Pekora.png">
+</body>
+</html>

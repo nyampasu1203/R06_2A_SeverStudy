@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        window.onload = function(){
+
+            let btn_add = document.getElementById("button-add");
+            let btn_del = document.getElementById("button-del");
+
+            btn_add.onclick = function(){
+
+                let img = document.createElement("img");
+
+                img.src = "img/Sakura-Miko.png";
+                img.classList = "Sakura-Miko";
+
+                document.body.appendChild(img);
+            }
+
+            btn_del.onclick = function(){
+
+                let amgs = document.getElementsByClassName("miko");
+
+                document.body.removeChild(imgs[0]);
+
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <input id="button-add" type="button" value="画像を表示">
+        <input id="button-del" type="button" value="画像を削除">    
+    </div>
+    <br>
+</body>
+</html>
