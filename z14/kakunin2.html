@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        window.onload = function(){
+
+            let btn = document.getElementById("img");
+
+            btn.onclick = function(){
+                let img = document.createElement("button");
+
+                img.src = "img/Sakura-miko.png";
+
+                document.body.appendChild(img);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="button" type="button" value="画像を表示">
+    <br>
+</body>
+</html>
